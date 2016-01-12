@@ -2,7 +2,10 @@
 import React, {Component} from 'react';
 import reactMixin from 'react-mixin';
 import BlazeTemplate from './BlazeTemplate';
+import MLayout from './MLayout';
 import {Users, Posts} from 'collections';
+import AppBar from 'material-ui/lib/app-bar';
+
 import './App.css';
 
 import 'react/addons';
@@ -28,10 +31,11 @@ export default class App extends Component {
     let postsCount = Posts.find().fetch().length;
     return (
       <div className="App">
-        <BlazeTemplate template={Template.loginButtons} />
-        <h1>Hello Webpack!</h1>
-        <p>There are {userCount} users in the Minimongo  (login to change)</p>
-        <p>There are {postsCount} posts in the Minimongo  (autopublish removed)</p>
+        <AppBar
+          title="Title"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+        />
+        <MLayout />
       </div>
     );
   }
