@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 import reactMixin from 'react-mixin';
 import BlazeTemplate from './BlazeTemplate';
 import MLayout from './MLayout';
+import PageNav from './PageNav';
 import {Users, Posts} from 'collections';
-import AppBar from 'material-ui/lib/app-bar';
 
 import './App.css';
 
@@ -31,10 +31,7 @@ export default class App extends Component {
     let postsCount = Posts.find().fetch().length;
     return (
       <div className="App">
-        <AppBar
-          title="Title"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
-        />
+        <PageNav />
         <MLayout />
       </div>
     );

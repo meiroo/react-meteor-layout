@@ -34,7 +34,8 @@
     "webpack-dev-server": "^1.12.0",
     "react-dom":"0.14.6",
     "react-grid-layout" : "0.10.0-beta1",
-    "material-ui":"0.14.2",
+    "elemental":"^0.5.11",
+    "react-addons-css-transition-group":"0.14.6",
     "webpack-meteor-tools": "git://github.com/mindfront/webpack-meteor-tools.git#843f5a4b30c6bf268bb0fd1d2add7abcb60dabf9"
   },
   "dependencies": {
